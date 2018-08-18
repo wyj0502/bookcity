@@ -1,0 +1,15 @@
+{{#each data.data}}{{#if this.data}}{{#with this.data}}
+<a href="/page/detail/{{fiction_id}}">
+    <dl>
+        <dt><img src="{{cover}}"></dt>
+        <dd>{{title}}</dd>
+    </dl>
+</a>
+{{/with}}{{else}}
+<a href="/page/detail/{{fiction_id}}">
+    <dl>
+        <dt><img src="{{cover}}"></dt>
+        <dd>{{title}}</dd>
+    </dl>
+</a>
+{{/if}}{{/each}}
